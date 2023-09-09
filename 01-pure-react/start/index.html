@@ -17,7 +17,16 @@
     <script> 
     // componenets are like functions that start with an upper case, used to return anything we want to show on interface
     function App(){
-        return React.createElement("header" , null, `Hello React!`);
+        // const time= new Date().toLocaleDateString();
+const [time, setTime]= React.useState(new Date().toLocaleTimeString())
+
+React.useEffect(function(){
+    setInterval(function(){
+        setTime(new Date().toLocaleTimeString());
+    },1000);
+},[])
+
+        return React.createElement("header" , null, `Hello React! It's: ${time}`);
 //(element to be created, props, string or children of the element)
     }
 
