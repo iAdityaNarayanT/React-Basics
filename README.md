@@ -33,10 +33,17 @@ Props in React are a way to pass data between components, serving as a communica
 Without props, components would be identical. Now, with props, customization becomes possible by passing data like image link, name value, and price.
 Defining Props: Props are defined in two steps - first by passing them into the component, and second by receiving them within the component.
 Receiving Props in Child Component: The child component receives props through a parameter, and these props can be accessed and utilized to replace static values in the component.
+
 🔀 Props are like a communication channel between parent and child components.
+
 💻 Props allow us to customize components by passing data.
+
 🎛️ Props are defined by passing them into the component and then receiving them inside the component.
+
 🔧 The order in which props are passed is irrelevant.
+
 🧮 Props can be used to pass any type of data, not just strings or numbers.
+
 🚀 Props are a fundamental concept in React and allow for powerful customization of components.
+
 JavaScript Mode for Non-String Props: To avoid unexpected behavior, it's crucial to use JavaScript mode when passing non-string values as props, ensuring correct data types.
