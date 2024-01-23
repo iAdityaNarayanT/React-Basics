@@ -1,5 +1,19 @@
 # React-Basics
 
+> [What are React Componenets?](#what-are-react-componenets?)
+> [What is JSX ?](#what-is-jsx-?)
+> [What is JSX ?](#what-is-props-?)
+> [Rendering Lists in React using map()](#rendering-lists-in-react-using-map())
+> [Conditional Rendering using && operator](#conditional-rendering-using-&&-operator)
+> [Conditional Rendering using Ternary operator](#conditional-rendering-using-ternary-operator)
+> [Conditional Rendering using multiple returns](#conditional-rendering-using-multiple-returns)
+> [Handling Events in React](#state)
+> [State](#how-to-create-a-state-variable-using-the-usestate-hook-in-react?)
+> [How to create a state variable using the useState hook in React?](#mechanics-of-state)
+> [Mechanics of state](#guidelines-for-using-state)
+> [Guidelines for Using State](#state-vs-props)
+
+
 ## What are React Componenets?
 
 * React applications are totally made out of componenets.
