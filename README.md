@@ -67,7 +67,7 @@ Rendering lists in React involves creating a component for each element in an ar
 
 🚫 Each item in the rendered list should have a unique key property to avoid warnings and optimize performance.
 
-🖍️ Semantic markup, such as using '<ul> and <li> elements', is important for creating well-structured lists in React.
+🖍️ Semantic markup, such as using `<ul> and <li> elements`, is important for creating well-structured lists in React.
 
 💻 Applying appropriate class names can help with styling and organizing the rendered list.
 
