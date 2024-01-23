@@ -7,13 +7,13 @@
 * React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
 i.e React renders for each of the componenet and all of them together make up the UI.
 
-*Components can be said as a piece of user interface.
+* Components can be said as a piece of user interface.
 
 Each componenet has its own data, javascript code, and logic.
 
->Componenets can be reuse, nested inside each other, and pass data between them.
->
->Components can only return one element at a time, that's why we need to wrap them up under one div tag
+> Componenets can be reuse, nested inside each other, and pass data between them.
+
+> Components can only return one element at a time, that's why we need to wrap them up under one div tag
 
 ## What is JSX ?
 
