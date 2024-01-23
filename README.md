@@ -1,10 +1,10 @@
 # React-Basics
 
-> [What are React Components?](#what-are-react-components-?)
+> [What are React Components?](#what-are-react-components)
 
-> [What is JSX?](#what-is-jsx?)
+> [What is JSX](#what-is-jsx)
 
-> [What is JSX?](#what-is-props?)
+> [What is props](#what-is-props)
 
 > [Rendering Lists in React using map()](#rendering-lists-in-react-using-map())
 
@@ -25,7 +25,7 @@
 > [Guidelines for Using State](#state-vs-props)
 
 
-## What are React Components?
+## What are React Components
 
 * React applications are totally made out of componenets.
 
@@ -40,7 +40,7 @@ Each componenet has its own data, javascript code, and logic.
 
 > Components can only return one element at a time, that's why we need to wrap them up under one div tag
 
-## What is JSX?
+## What is JSX
 
 Component contains its own data, logic, and appearance.
 Because if a component is a piece of the user interface, it means that we must be able to describe exactly what that component looks like. And so that's where JSX comes into play.
@@ -56,7 +56,7 @@ We use JSX to describe the UI based on props and state. So the data that's curre
 
 So, there are no Query selectors, no ad event listeners, no class list, no text content properties anywhere to be seen here because in fact, React is basically a huge abstraction away from the DOM we use JSX to tell React what we want to see on the screen but not how to achieve it step-by-step. React can figure that out on its own.
 
-## What is props?
+## What is props
 
 Props in React are a way to pass data between components, serving as a communication channel from parent to child components.
 Without props, components would be identical. Now, with props, customization becomes possible by passing data like image link, name value, and price.
