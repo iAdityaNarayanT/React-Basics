@@ -54,6 +54,7 @@ Receiving Props in Child Component: The child component receives props through a
 
 🚀 Props are immutable and cannot be changed by the child component.
 
+> Destructuring props allows us to directly receive the props object into a component instead of writing props dot whatever else. It makes it easier to see which props a component will receive.
 
 ## Rendering Lists in React using map()
 
