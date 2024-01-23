@@ -93,8 +93,10 @@ The && operator is demonstrated as a way to conditionally render JSX based on a 
 
 Example:
 
-`const ComponentA = () => <h1>Component A</h1>;
+```
+const ComponentA = () => <h1>Component A</h1>;
 
 const ComponentB = () => <h1>Component B</h1>;
 
 const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
+```
