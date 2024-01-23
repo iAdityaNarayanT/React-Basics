@@ -1,6 +1,6 @@
 # React-Basics
 
-> [What are React Componenets?](#what-are-react-componenets-?)
+> [What are React Components?](#what-are-react-components-?)
 
 > [What is JSX?](#what-is-jsx?)
 
@@ -25,7 +25,7 @@
 > [Guidelines for Using State](#state-vs-props)
 
 
-## What are React Componenets?
+## What are React Components?
 
 * React applications are totally made out of componenets.
 
