@@ -105,3 +105,15 @@ const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 * Using the ternary operator allows for displaying an alternative message or JSX element.
 * If-else statements cannot be used for conditional rendering in JSX because they do not produce a value.
 * The ternary operator is a preferred method for conditional rendering over the && operator.
+
+## Conditional Rendering using multiple returns
+* Conditional rendering with multiple returns allows components to return different JSX blocks based on a condition.
+* Multiple returns can be used by adding another return keyword in the component.
+* The two returns cannot happen at the same time.
+  
+💡 We can use the if keyword to conditionally render JSX or components.
+
+💡 Early return with null can be used to prevent rendering certain components based on a condition.
+
+💡 The return operator should be used whenever there is a need to return JSX based on a condition.
+
