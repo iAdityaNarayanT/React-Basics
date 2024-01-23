@@ -6,9 +6,9 @@
 
 > [What is props](#what-is-props)
 
-> [Rendering Lists in React using map()](#rendering-lists-in-react-using-map-(-))
+> [Rendering Lists in React using map()](#rendering-lists-in-react-using-map())
 
-> [Conditional Rendering using && operator](#conditional-rendering-using-&-&-operator)
+> [Conditional Rendering using && operator](#conditional-rendering-using-&&-operator)
 
 > [Conditional Rendering using Ternary operator](#conditional-rendering-using-ternary-operator)
 
