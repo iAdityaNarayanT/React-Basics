@@ -73,3 +73,28 @@ Rendering lists in React involves creating a component for each element in an ar
 
 ✂️ Rendering lists in React is a fundamental technique that will be used frequently throughout the course.
 
+## Conditional Rendering using && operator
+
+The && operator is demonstrated as a way to conditionally render JSX based on a certain condition.
+
+👉 Conditional rendering is the process of rendering UI elements or components based on a condition.
+
+👉 The && operator can be used for conditional rendering in React by taking advantage of short circuiting.
+
+👉 When a truthy value is passed to the && operator, the second part of the operator is returned.
+
+👉 When a falsey value is passed to the && operator, the second part of the operator is not executed and nothing is rendered.
+
+👉 It is important to ensure that the condition used with the && operator evaluates to a true or false value, rather than a number, to avoid unexpected rendering results.
+
+👉 While the && operator can be convenient for simple conditional rendering, the ternary operator is often preferred for more complex conditions.
+
+## Conditional Rendering using Ternary operator
+
+Example:
+
+`const ComponentA = () => <h1>Component A</h1>;
+
+const ComponentB = () => <h1>Component B</h1>;
+
+const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
