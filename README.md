@@ -100,3 +100,8 @@ const ComponentB = () => <h1>Component B</h1>;
 
 const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 ```
+* The ternary operator can be used for conditional rendering in React.
+* The ternary operator has three parts: a condition, a result if true, and a result if false.
+* Using the ternary operator allows for displaying an alternative message or JSX element.
+* If-else statements cannot be used for conditional rendering in JSX because they do not produce a value.
+* The ternary operator is a preferred method for conditional rendering over the && operator.
