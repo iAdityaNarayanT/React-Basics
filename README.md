@@ -31,7 +31,9 @@ So, there are no Query selectors, no ad event listeners, no class list, no text 
 
 Props in React are a way to pass data between components, serving as a communication channel from parent to child components.
 Without props, components would be identical. Now, with props, customization becomes possible by passing data like image link, name value, and price.
+
 Defining Props: Props are defined in two steps - first by passing them into the component, and second by receiving them within the component.
+
 Receiving Props in Child Component: The child component receives props through a parameter, and these props can be accessed and utilized to replace static values in the component.
 
 🔀 Props are like a communication channel between parent and child components.
