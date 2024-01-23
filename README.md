@@ -179,3 +179,24 @@ function Example() {
 🐛 Prevent bugs by adding conditions to the event handlers that update the state.
 
 💡 Hooks in React, such as useState, should only be called at the top level of the component function.
+
+* React recommends updating state using the setter function instead of manually updating it.
+* Manually updating state variables may not trigger a re-render in React.
+* Treat state as immutable and use the tools provided by React to update it.
+
+## Mechanics of state
+
+*React updates a component view by re-rendering the entire component whenever the underlying data changes.
+*State is preserved throughout re-renders and is updated using the useState hook.
+*When state is updated, the component is automatically re-rendered.
+*React reacts to state changes by re-rendering the user interface.
+
+> Updating state based on current state:
+
+Updating state based on the current state can lead to unexpected behavior. It is recommended to use a callback function instead.
+
+![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/da0916a4-4811-4601-9c50-460cce20e1da)
+
+🚫 Avoid updating state directly based on the current state, as it can lead to unpredictable results.
+
+🆗 When updating state without considering the current state, it is safe to pass the new value directly.
