@@ -216,3 +216,6 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 📌 Avoid using state for variables that should not trigger a re-render.
 
 📌 Use regular variables defined with "const" for variables that do not need state.
+
+## State vs props
+![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/1082674d-d29c-4d1f-913f-e89a85fbf943)
