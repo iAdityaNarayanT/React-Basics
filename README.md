@@ -186,10 +186,10 @@ function Example() {
 
 ## Mechanics of state
 
-*React updates a component view by re-rendering the entire component whenever the underlying data changes.
-*State is preserved throughout re-renders and is updated using the useState hook.
-*When state is updated, the component is automatically re-rendered.
-*React reacts to state changes by re-rendering the user interface.
+* React updates a component view by re-rendering the entire component whenever the underlying data changes.
+* State is preserved throughout re-renders and is updated using the useState hook.
+* When state is updated, the component is automatically re-rendered.
+* React reacts to state changes by re-rendering the user interface.
 
 > Updating state based on current state:
 
@@ -200,3 +200,19 @@ Updating state based on the current state can lead to unexpected behavior. It is
 🚫 Avoid updating state directly based on the current state, as it can lead to unpredictable results.
 
 🆗 When updating state without considering the current state, it is safe to pass the new value directly.
+
+## Guidelines for Using State
+
+With state, we view Ul as a reflection of data changing over time. We describe that reflection of data using `state, event handlers, and JSX.`
+
+📌 Create a new state variable for any data that a component should keep track of over time.
+
+📌 Use state when you want something in a component to be dynamic.
+
+📌 Update a component's state to change its appearance or displayed data.
+
+📌 Imagine a component's view as a reflection of state changing over time.
+
+📌 Avoid using state for variables that should not trigger a re-render.
+
+📌 Use regular variables defined with "const" for variables that do not need state.
