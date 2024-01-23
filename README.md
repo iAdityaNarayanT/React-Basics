@@ -1,6 +1,6 @@
 # React-Basics
 
-> [What are React Componenets?](#what-are-react-componenets?)
+> [What are React Componenets?](#what-are-react-componenets-?)
 
 > [What is JSX?](#what-is-jsx?)
 
@@ -8,7 +8,7 @@
 
 > [Rendering Lists in React using map()](#rendering-lists-in-react-using-map())
 
-> [Conditional Rendering using && operator](#conditional-rendering-using-&&-operator)
+> [Conditional Rendering using && operator](#conditional-rendering-using-&-&-operator)
 
 > [Conditional Rendering using Ternary operator](#conditional-rendering-using-ternary-operator)
 
