@@ -2,14 +2,18 @@
 
 ## What are React Componenets?
 
-React applications are totally made out of componenets.
-React componets are like building blocks for user interface in react.
-React takes all the components and combine them together to build one single webpage UI.
+* React applications are totally made out of componenets.
+
+* React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
 i.e React renders for each of the componenet and all of them together make up the UI.
-Components can be said as a piece of user interface.
+
+*Components can be said as a piece of user interface.
+
 Each componenet has its own data, javascript code, and logic.
-Componenets can be reuse, nested inside each other, and pass data between them.
-Components can only return one element at a time, that's why we need to wrap them up under one div tag
+
+>Componenets can be reuse, nested inside each other, and pass data between them.
+>
+>Components can only return one element at a time, that's why we need to wrap them up under one div tag
 
 ## What is JSX ?
 
@@ -36,30 +40,36 @@ Defining Props: Props are defined in two steps - first by passing them into the 
 
 Receiving Props in Child Component: The child component receives props through a parameter, and these props can be accessed and utilized to replace static values in the component.
 
->🔀 Props are like a communication channel between parent and child components. Props are like settings that allow a parent component to control the appearance and behavior of its child component.
+🔀 Props are like a communication channel between parent and child components. Props are like settings that allow a parent component to control the appearance and behavior of its child component.
 
->💻 Props allow us to customize components by passing data.
+💻 Props allow us to customize components by passing data.
 
->🎛️ Props are defined by passing them into the component and then receiving them inside the component.
+🎛️ Props are defined by passing them into the component and then receiving them inside the component.
 
->🔧 The order in which props are passed is irrelevant.
+🔧 The order in which props are passed is irrelevant.
 
->🫡React follows a one-way data flow, where data can only be passed from parent to child components using props. One-way data flow makes React applications more predictable, easier to understand, and more efficient.
+🫡React follows a one-way data flow, where data can only be passed from parent to child components using props. One-way data flow makes React applications more predictable, easier to understand, and more efficient.
 
->🧮 Props can be any type of value, including single values, arrays, functions, and even other React components.
+🧮 Props can be any type of value, including single values, arrays, functions, and even other React components.
 
->🚀 Props are immutable and cannot be changed by the child component.
+🚀 Props are immutable and cannot be changed by the child component.
 
 
 ## Rendering Lists in React using map()
 
 Rendering lists in React involves creating a component for each element in an array. This can be achieved using the map method in JavaScript.
 
->🍕 We can render lists in React by mapping over an array and creating a component for each element.
->🔄 The map method in JavaScript is used to loop over the array and create a new array with the desired components.
->💡 It is common practice to pass the entire object as a prop to the component and extract the necessary information inside the component.
->🚫 Each item in the rendered list should have a unique key property to avoid warnings and optimize performance.
->🖍️ Semantic markup, such as using <ul> and <li> elements, is important for creating well-structured lists in React.
->💻 Applying appropriate class names can help with styling and organizing the rendered list.
->✂️ Rendering lists in React is a fundamental technique that will be used frequently throughout the course.
+🍕 We can render lists in React by mapping over an array and creating a component for each element.
+
+🔄 The map method in JavaScript is used to loop over the array and create a new array with the desired components.
+
+💡 It is common practice to pass the entire object as a prop to the component and extract the necessary information inside the component.
+
+🚫 Each item in the rendered list should have a unique key property to avoid warnings and optimize performance.
+
+🖍️ Semantic markup, such as using <ul> and <li> elements, is important for creating well-structured lists in React.
+
+💻 Applying appropriate class names can help with styling and organizing the rendered list.
+
+✂️ Rendering lists in React is a fundamental technique that will be used frequently throughout the course.
 
