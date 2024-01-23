@@ -26,3 +26,17 @@ a declarative approach is to simply describe what the UI should look like at all
 We use JSX to describe the UI based on props and state. So the data that's currently in the component and all that happens without any DOM manipulation at all.
 
 So, there are no Query selectors, no ad event listeners, no class list, no text content properties anywhere to be seen here because in fact, React is basically a huge abstraction away from the DOM we use JSX to tell React what we want to see on the screen but not how to achieve it step-by-step. React can figure that out on its own.
+
+## What is props ?
+
+Props in React are a way to pass data between components, serving as a communication channel from parent to child components.
+Without props, components would be identical. Now, with props, customization becomes possible by passing data like image link, name value, and price.
+Defining Props: Props are defined in two steps - first by passing them into the component, and second by receiving them within the component.
+Receiving Props in Child Component: The child component receives props through a parameter, and these props can be accessed and utilized to replace static values in the component.
+🔀 Props are like a communication channel between parent and child components.
+💻 Props allow us to customize components by passing data.
+🎛️ Props are defined by passing them into the component and then receiving them inside the component.
+🔧 The order in which props are passed is irrelevant.
+🧮 Props can be used to pass any type of data, not just strings or numbers.
+🚀 Props are a fundamental concept in React and allow for powerful customization of components.
+JavaScript Mode for Non-String Props: To avoid unexpected behavior, it's crucial to use JavaScript mode when passing non-string values as props, ensuring correct data types.
