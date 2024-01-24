@@ -40,7 +40,7 @@ Each componenet has its own data, javascript code, and logic.
 
 > Components can only return one element at a time, that's why we need to wrap them up under one div tag
 
-## What is JSX
+## What is JSX?
 
 Component contains its own data, logic, and appearance.
 Because if a component is a piece of the user interface, it means that we must be able to describe exactly what that component looks like. And so that's where JSX comes into play.
