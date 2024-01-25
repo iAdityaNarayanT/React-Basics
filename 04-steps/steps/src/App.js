@@ -11,6 +11,9 @@ const messages = [
 
 export default function App(){
   const [step, setStep]=useState(1);
+
+  const [isOpen, setIsOpen]= useState(true)
+
   function handlePrevious(){
 
    if (step>1) setStep(step-1);
@@ -20,7 +23,12 @@ export default function App(){
     
   }
 
-  return (<div className="steps">
+  return (
+  <>
+    <button className="close" onClick={()=>setIsOpen(!isOpen)}>&times;</button>
+  {
+    (isOpen &&
+  <div className="steps">
     
 <div className="numbers">
   
@@ -36,6 +44,7 @@ export default function App(){
   <button style={{backgroundColor:'#7950f2' , color:'#fff'}} onClick={handleNext}>Next</button>
 
 </div>
-  </div>)
+  </div>)}  
+  </>)
 }
 

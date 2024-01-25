@@ -6,7 +6,7 @@
 
 > [What is props](#what-is-props)
 
-> [Rendering Lists in React using map()](#rendering-lists-in-react-using-map())
+> [Rendering Lists in React using map()](<#rendering-lists-in-react-using-map()>)
 
 > [Conditional Rendering using && operator](#conditional-rendering-using-&&-operator)
 
@@ -24,15 +24,14 @@
 
 > [Guidelines for Using State](#state-vs-props)
 
-
 ## What are React Components
 
-* React applications are totally made out of componenets.
+- React applications are totally made out of componenets.
 
-* React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
-i.e React renders for each of the componenet and all of them together make up the UI.
+- React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
+  i.e React renders for each of the componenet and all of them together make up the UI.
 
-* Components can be said as a piece of user interface.
+- Components can be said as a piece of user interface.
 
 Each componenet has its own data, javascript code, and logic.
 
@@ -40,7 +39,7 @@ Each componenet has its own data, javascript code, and logic.
 
 > Components can only return one element at a time, that's why we need to wrap them up under one div tag
 
-## What is JSX?
+## What is JSX
 
 Component contains its own data, logic, and appearance.
 Because if a component is a piece of the user interface, it means that we must be able to describe exactly what that component looks like. And so that's where JSX comes into play.
@@ -126,17 +125,19 @@ const ComponentB = () => <h1>Component B</h1>;
 
 const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 ```
-* The ternary operator can be used for conditional rendering in React.
-* The ternary operator has three parts: a condition, a result if true, and a result if false.
-* Using the ternary operator allows for displaying an alternative message or JSX element.
-* If-else statements cannot be used for conditional rendering in JSX because they do not produce a value.
-* The ternary operator is a preferred method for conditional rendering over the && operator.
+
+- The ternary operator can be used for conditional rendering in React.
+- The ternary operator has three parts: a condition, a result if true, and a result if false.
+- Using the ternary operator allows for displaying an alternative message or JSX element.
+- If-else statements cannot be used for conditional rendering in JSX because they do not produce a value.
+- The ternary operator is a preferred method for conditional rendering over the && operator.
 
 ## Conditional Rendering using multiple returns
-* Conditional rendering with multiple returns allows components to return different JSX blocks based on a condition.
-* Multiple returns can be used by adding another return keyword in the component.
-* The two returns cannot happen at the same time.
-  
+
+- Conditional rendering with multiple returns allows components to return different JSX blocks based on a condition.
+- Multiple returns can be used by adding another return keyword in the component.
+- The two returns cannot happen at the same time.
+
 💡 We can use the if keyword to conditionally render JSX or components.
 
 💡 Early return with null can be used to prevent rendering certain components based on a condition.
@@ -161,7 +162,7 @@ Handling events in React is done in a declarative way using event listeners atta
 
 ## State
 
-> Understanding state mechanics unlocks the power of React development. 
+> Understanding state mechanics unlocks the power of React development.
 
 🔄 State is the most crucial concept in React, serving as the memory of a component to hold data over time.
 
@@ -171,7 +172,7 @@ Handling events in React is done in a declarative way using event listeners atta
 
 🔄 Updating a piece of state triggers React to re-render the component, creating an updated view in the user interface.
 
-🧩 State is dynamic and enables developers to make their applications interactive by responding to user actions. 
+🧩 State is dynamic and enables developers to make their applications interactive by responding to user actions.
 
 ## How to create a state variable using the useState hook in React?
 
@@ -205,16 +206,16 @@ function Example() {
 
 💡 Hooks in React, such as useState, should only be called at the top level of the component function.
 
-* React recommends updating state using the setter function instead of manually updating it.
-* Manually updating state variables may not trigger a re-render in React.
-* Treat state as immutable and use the tools provided by React to update it.
+- React recommends updating state using the setter function instead of manually updating it.
+- Manually updating state variables may not trigger a re-render in React.
+- Treat state as immutable and use the tools provided by React to update it.
 
 ## Mechanics of state
 
-* React updates a component view by re-rendering the entire component whenever the underlying data changes.
-* State is preserved throughout re-renders and is updated using the useState hook.
-* When state is updated, the component is automatically re-rendered.
-* React reacts to state changes by re-rendering the user interface.
+- React updates a component view by re-rendering the entire component whenever the underlying data changes.
+- State is preserved throughout re-renders and is updated using the useState hook.
+- When state is updated, the component is automatically re-rendered.
+- React reacts to state changes by re-rendering the user interface.
 
 > Updating state based on current state:
 
@@ -243,4 +244,5 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 📌 Use regular variables defined with "const" for variables that do not need state.
 
 ## State vs props
+
 ![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/1082674d-d29c-4d1f-913f-e89a85fbf943)
