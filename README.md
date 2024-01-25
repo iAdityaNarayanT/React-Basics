@@ -246,3 +246,22 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 ## State vs props
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/1082674d-d29c-4d1f-913f-e89a85fbf943)
+
+## Thinking in React
+
+> Thinking in React is about having a good understanding of how to use React tools, such as components, state, props, and data flow.
+> It involves breaking down the UI into components, building a static version of the application, considering state management, and understanding how data flows through the app.
+
+💡 Thinking in React means having a good mental model of how to use React tools.
+
+💡 It involves breaking the UI into components and establishing the component tree.
+
+💡 Building a static version of the application helps to focus on coding upfront before worrying about state and interactivity.
+
+💡 State management is an important aspect of thinking in React.
+
+💡 Data flow through the application should be considered, including one-way data flow and child-to-parent communication.
+
+💡 Thinking in React helps with designing reusable components and understanding how to make data flow through the app.
+
+![Alt text](image.png)
