@@ -281,3 +281,17 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 📌 State can be kept within the current component, passed down to child components using props, or lifted up to a common parent component.
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/blob/3f2dd5cea5a66b45406888fe97f3c506d419a4a8/assets/React%20state%20mgmt.png)
+
+## Derived State
+
+💡 Derived state is computed from another existing piece of state or props.
+
+💡 It is used to avoid creating additional state variables that depend on the same data.
+
+💡 Updating derived state is automatic and does not require manual syncing.
+
+💡 Derived state can be derived from the existing state or props in a component.
+
+💡 It is recommended to use derived state when one state can easily be computed from another, to avoid unnecessary complexity and potential errors.
+
+💡 The cart state in the example serves as a single source of truth for the numItems and totalPrice state variables.
