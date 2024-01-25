@@ -266,3 +266,16 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/d121aa36-ae87-420b-aa80-b928f6e2ecb5)
 
+## State When and where?
+
+📌 State management involves creating new pieces of state, determining the type of state needed, deciding where to place the state, and managing data flow.
+
+📌 Local state is specific to one or a few components, while global state is accessible to multiple components in the entire app.
+
+📌 It is recommended to start with local state and only use global state when necessary.
+
+📌 A flow chart can guide the decision process of when to create state and where to place it.
+
+📌 State can be derived from existing state or props, and updating state usually triggers component re-rendering.
+
+📌 State can be kept within the current component, passed down to child components using props, or lifted up to a common parent component.
