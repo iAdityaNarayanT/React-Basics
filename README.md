@@ -279,3 +279,5 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 📌 State can be derived from existing state or props, and updating state usually triggers component re-rendering.
 
 📌 State can be kept within the current component, passed down to child components using props, or lifted up to a common parent component.
+
+![image](https://github.com/iAdityaNarayanT/React-Basics/blob/3f2dd5cea5a66b45406888fe97f3c506d419a4a8/assets/React%20state%20mgmt.png)
