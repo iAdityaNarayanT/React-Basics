@@ -264,4 +264,5 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 
 💡 Thinking in React helps with designing reusable components and understanding how to make data flow through the app.
 
-![Alt text](image.png)
+![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/d121aa36-ae87-420b-aa80-b928f6e2ecb5)
+
