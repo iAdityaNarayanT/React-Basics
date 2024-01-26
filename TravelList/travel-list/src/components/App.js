@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Form } from "./Form";
-import { Logo } from "./Logo";
-import { PackingList } from "./PackingList";
-import { Stats } from "./Stats";
+import Form from "./Form";
+import Logo from "./Logo";
+import PackingList from "./PackingList";
+import Stats from "./Stats";
 export default function App() {
   //lifitng up items state to most common parent components so that both items and packinglist component can access it.
   const [items, setItems] = useState([]);
