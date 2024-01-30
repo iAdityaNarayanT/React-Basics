@@ -4,15 +4,13 @@ import Friend from "./Friend";
 import postman from "./Postman.png";
 
 function FriendList({ friends }) {
-  const friendList = friends.map((friend) => (
-    <Friend
-      friendName={friend.friendName}
-      friendDesc={friend.desc}
-      friendImg={friend.imgurl}
-      key={friend.id}
-    />
-  ));
-  return <ul>{friendList}</ul>;
+  return (
+    <ul>
+      {friends.map((friend) => (
+        <Friend friend={friend} />
+      ))}
+    </ul>
+  );
 }
 
 export default FriendList;

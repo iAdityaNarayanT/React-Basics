@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "./Button";
 
-function Friend({ friendName, friendDesc, friendImg }) {
+function Friend({ friend }) {
   return (
     <li>
-      <img src={friendImg} alt="friend" />
-      <h3>{friendName} </h3>
-      <p>{friendDesc}</p>
+      <img src={friend.img} alt="friend" />
+      <h3>{friend.name} </h3>
+      <p>{}</p>
       <Button />
     </li>
   );
