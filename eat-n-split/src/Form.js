@@ -14,8 +14,7 @@ function Form({ handleAddFriend }) {
       id: Date.now(),
     };
     handleAddFriend(newFriend);
-    // console.log(newItem);
-    // to set item description and quantity details in form back to original
+
     setFriendName("");
     setImgUrl("");
   }
