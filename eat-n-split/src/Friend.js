@@ -24,6 +24,7 @@ export default function Friend({ friend, onSelection, selectedFriend }) {
       <Button onClick={() => onSelection(friend)}>
         {isSelected ? "Close" : "Select"}
       </Button>
+      <Button onClick={() => onSelection(friend)}>🗑️</Button>
     </li>
   );
 }
