@@ -1,16 +1,16 @@
 import React from "react";
-import cdl from "./CDL.png";
-import Friend from "./Friend";
-import postman from "./Postman.png";
 
-function FriendList({ friends }) {
+function FriendsList({ friends, onSelection, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
-        <Friend friend={friend} />
+        <Friend
+          friend={friend}
+          key={friend.id}
+          selectedFriend={selectedFriend}
+          onSelection={onSelection}
+        />
       ))}
     </ul>
   );
 }
-
-export default FriendList;
