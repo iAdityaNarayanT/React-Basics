@@ -10,7 +10,11 @@ export default function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [showAddFriend, setShowAddFriend] = useState(false);
   const [selectedFriend, setSelectedFriend] = useState(null);
-
+  function handleClear() {
+    setShowAddFriend(false);
+    setFriends([]);
+    setSelectedFriend(null);
+  }
   function handleShowAddFriend() {
     setShowAddFriend((show) => !show);
   }
@@ -51,6 +55,7 @@ export default function App() {
         <Button onClick={handleShowAddFriend}>
           {showAddFriend ? "Close" : "Add friend"}
         </Button>
+        <Button onClick={handleClear}>Clear</Button>
       </div>
 
       {selectedFriend && (
