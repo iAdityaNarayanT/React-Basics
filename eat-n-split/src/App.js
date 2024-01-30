@@ -1,9 +1,11 @@
 import { useState } from "react";
-import Form from "./Form";
+import Button from "./Button";
+import FormSplitBill from "./FormSplitBill";
+// import Friend from "./Friend";
+import FormAddFriend from "./FormAddFriend";
+import FriendsList from "./FriendsList";
 
-import FriendDetails from "./FriendDetails";
-import FriendList from "./FriendList";
-
+const initialFriends = [];
 export default function App() {
   const [friends, setFriends] = useState(initialFriends);
   const [showAddFriend, setShowAddFriend] = useState(false);

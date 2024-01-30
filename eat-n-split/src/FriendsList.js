@@ -1,6 +1,6 @@
 import React from "react";
-
-function FriendsList({ friends, onSelection, selectedFriend }) {
+import Friend from "./Friend";
+export default function FriendsList({ friends, onSelection, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
