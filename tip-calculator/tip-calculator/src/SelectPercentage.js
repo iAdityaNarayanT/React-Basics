@@ -1,4 +1,4 @@
-function SelectPercentage({ onSelect, percentage, children }) {
+export default function SelectPercentage({ onSelect, percentage, children }) {
   return (
     <div>
       <label>{children}</label>

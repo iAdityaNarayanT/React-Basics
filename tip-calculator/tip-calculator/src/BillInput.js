@@ -1,4 +1,4 @@
-function BillInput({ bill, onsetBill }) {
+export default function BillInput({ bill, onsetBill }) {
   return (
     <div>
       <label>How much was the bill?</label>
