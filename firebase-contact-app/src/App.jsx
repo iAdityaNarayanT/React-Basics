@@ -14,7 +14,8 @@ const App = () => {
         const contactsSnapshot = await getDocs(contactsRef);
       } catch (error) {}
     };
-  });
+    getContacts();
+  }, []);
   return (
     <div className="mx-auto max-w-[370px] px-4">
       <Navbar />
