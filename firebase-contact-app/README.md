@@ -7,5 +7,5 @@ const contactsRef = collection(db, "contacts");
 const contactsSnapshot = await getDocs(contactsRef);
 //this stores the data coming from tge firestore database
 
-const contactLists = contactsSnapshot.docs.map((doc) => doc.data());
+const contactLists = contactsSnapshot.docs.map((doc) => {return { id: doc.id, ...doc.data() };});
 // used to extracts meaningful i.e the array of contacts saved on firebase, maps over every doc to resultant doc.data()
