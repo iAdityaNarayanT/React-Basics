@@ -1,9 +1,9 @@
-import { collection, getDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
 import Navbar from "./components/Navbar";
-import { db, getDocs } from "./config/firebase";
+import { db } from "./config/firebase";
 const App = () => {
   const [contacts, setContacts] = useState([]);
   //use effect hook to perform network call
@@ -12,7 +12,11 @@ const App = () => {
       try {
         const contactsRef = collection(db, "contacts");
         const contactsSnapshot = await getDocs(contactsRef);
-      } catch (error) {}
+        const contactLists = contactsSnapshot.docs.map((doc) => doc.data());
+        console.log(contactLists);
+      } catch (error) {
+        console.log(error);
+      }
     };
     getContacts();
   }, []);
