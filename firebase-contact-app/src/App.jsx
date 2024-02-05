@@ -2,6 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
+import { HiOutlineUserCircle } from "react-icons/hi";
 import Navbar from "./components/Navbar";
 import { db } from "./config/firebase";
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         const contactLists = contactsSnapshot.docs.map((doc) => {
           return { id: doc.id, ...doc.data() };
         });
+        setContacts(contactLists);
         console.log(contactLists);
       } catch (error) {
         console.log(error);
@@ -35,6 +37,17 @@ const App = () => {
         </div>
 
         <AiFillPlusCircle className="text-5xl  cursor-pointer text-white" />
+      </div>
+      <div>
+        {contacts.map((contact) => (
+          <div key={contact.id}>
+            <HiOutlineUserCircle />
+            <div className="">
+              <h2 className="">{contact.name}</h2>
+              <p className="">{contact.email}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
