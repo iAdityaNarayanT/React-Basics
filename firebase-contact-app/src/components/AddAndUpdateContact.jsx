@@ -1,9 +1,19 @@
+import { addDoc, collection } from "firebase/firestore";
 import { Field, Form, Formik } from "formik";
-import React from "react";
+import { db } from "../config/firebase";
 import Modal from "./Modal";
 
 const AddAndUpdateContact = ({ isOpen, onClose }) => {
   //function to send data to firebase
+  const addContact = async (contact) => {
+    try {
+      const contactRef = collection(db, "contacts");
+      await addDoc(contactRef, contact);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <Formik
@@ -11,7 +21,10 @@ const AddAndUpdateContact = ({ isOpen, onClose }) => {
           name: "",
           email: "",
         }}
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(values) => {
+          console.log(values);
+          addContact(values);
+        }}
       >
         <Form className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
