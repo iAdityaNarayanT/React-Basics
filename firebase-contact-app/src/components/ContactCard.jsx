@@ -7,7 +7,7 @@ const ContactCard = ({ contact }) => {
   return (
     <div
       key={contact.id}
-      className="flex justify-around bg-yellow items-center rounded-lg p-2"
+      className="flex justify-between bg-yellow items-center rounded-lg p-2"
     >
       <div className="flex gap-1">
         <HiOutlineUserCircle className="text-orange text-4xl" />
