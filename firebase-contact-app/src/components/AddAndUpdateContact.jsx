@@ -3,6 +3,7 @@ import React from "react";
 import Modal from "./Modal";
 
 const AddAndUpdateContact = ({ isOpen, onClose }) => {
+  //function to send data to firebase
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <Formik
