@@ -2,6 +2,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
+import AddAndUpdateContact from "./components/AddAndUpdateContact";
 import ContactCard from "./components/ContactCard";
 import Modal from "./components/Modal";
 import Navbar from "./components/Navbar";
@@ -57,9 +58,7 @@ const App = () => {
           ))}
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={onClose}>
-        Hi
-      </Modal>
+      <AddAndUpdateContact onClose={onClose} isOpen={isOpen} />
     </>
   );
 };
