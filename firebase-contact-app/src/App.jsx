@@ -57,7 +57,9 @@ const App = () => {
           ))}
         </div>
       </div>
-      <Modal isOpen={isOpen} onClose={onClose}></Modal>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        Hi
+      </Modal>
     </>
   );
 };
