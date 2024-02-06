@@ -1,8 +1,14 @@
 import { addDoc, collection, doc, updateDoc } from "firebase/firestore";
 import { Field, Form, Formik } from "formik";
 import { toast } from "react-toastify";
+import * as Yup from "yup";
 import { db } from "../config/firebase";
 import Modal from "./Modal";
+
+const contactSchemaValidation = Yup.object().shape({
+  name: Yup.string().required("Name is Required"),
+  email: Yup.string().email("Inavlid Email ").required("Email is Required"),
+});
 
 const AddAndUpdateContact = ({ isOpen, onClose, isUpdate, contact }) => {
   //function to send data to firebase
