@@ -1,21 +1,15 @@
 import { deleteDoc, doc } from "firebase/firestore";
-import { useState } from "react";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { IoMdTrash } from "react-icons/io";
 import { RiEditCircleLine } from "react-icons/ri";
 import { db } from "../config/firebase";
+import useDisclouse from "../hooks/useDisclouse";
 import AddAndUpdateContact from "./AddAndUpdateContact";
 
 // eslint-disable-next-line react/prop-types
 const ContactCard = ({ contact }) => {
-  const [isOpen, setOpen] = useState(false);
+  const { isOpen, onClose, onOpen } = useDisclouse();
 
-  function onOpen() {
-    setOpen(true);
-  }
-  function onClose() {
-    setOpen(false);
-  }
   const deleteContact = async (id) => {
     try {
       await deleteDoc(doc(db, "contacts", id));
@@ -37,14 +31,19 @@ const ContactCard = ({ contact }) => {
           </div>
         </div>
         <div className="flex text-3xl">
-          <RiEditCircleLine />
+          <RiEditCircleLine onClick={onOpen} className="cursor-pointer" />
           <IoMdTrash
             onClick={() => deleteContact(contact.id)}
-            className="text-orange"
+            className="text-orange cursor-pointer"
           />
         </div>
       </div>
-      <AddAndUpdateContact isOpen={isOpen} onClose={onClose} />
+      <AddAndUpdateContact
+        isUpdate
+        contact={contact}
+        isOpen={isOpen}
+        onClose={onClose}
+      />
     </>
   );
 };

@@ -6,16 +6,11 @@ import AddAndUpdateContact from "./components/AddAndUpdateContact";
 import ContactCard from "./components/ContactCard";
 import Navbar from "./components/Navbar";
 import { db } from "./config/firebase";
+import useDisclouse from "./hooks/useDisclouse";
 const App = () => {
   const [contacts, setContacts] = useState([]);
-  const [isOpen, setOpen] = useState(false);
+  const { isOpen, onClose, onOpen } = useDisclouse();
 
-  function onOpen() {
-    setOpen(true);
-  }
-  function onClose() {
-    setOpen(false);
-  }
   //use effect hook to perform network call
   useEffect(() => {
     const getContacts = async () => {
