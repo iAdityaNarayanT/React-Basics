@@ -4,7 +4,6 @@ import { AiFillPlusCircle } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
 import AddAndUpdateContact from "./components/AddAndUpdateContact";
 import ContactCard from "./components/ContactCard";
-import Modal from "./components/Modal";
 import Navbar from "./components/Navbar";
 import { db } from "./config/firebase";
 const App = () => {

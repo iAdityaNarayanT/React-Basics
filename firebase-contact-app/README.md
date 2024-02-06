@@ -12,3 +12,14 @@ const contactLists = contactsSnapshot.docs.map((doc) => {return { id: doc.id, ..
 
 // Rendering a modal dialog with a portal
 https://react.dev/reference/react-dom/createPortal
+
+// the following code has to be reused using custom hooks
+
+  <!-- const [isOpen, setOpen] = useState(false);
+
+  function onOpen() {
+    setOpen(true);
+  }
+  function onClose() {
+    setOpen(false);
+  } -->
