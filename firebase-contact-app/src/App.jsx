@@ -9,6 +9,8 @@ import ContactCard from "./components/ContactCard";
 import Navbar from "./components/Navbar";
 import { db } from "./config/firebase";
 import useDisclouse from "./hooks/useDisclouse";
+
+import NotFoundContact from "./components/NotFoundContact";
 const App = () => {
   const [contacts, setContacts] = useState([]);
   const { isOpen, onClose, onOpen } = useDisclouse();
@@ -69,9 +71,13 @@ const App = () => {
           />
         </div>
         <div className="mt-4 flex flex-col gap-3">
-          {contacts.map((contact) => (
-            <ContactCard contact={contact} key={contact.id} />
-          ))}
+          {contacts.length <= 0 ? (
+            <NotFoundContact />
+          ) : (
+            contacts.map((contact) => (
+              <ContactCard contact={contact} key={contact.id} />
+            ))
+          )}
         </div>
       </div>
       <AddAndUpdateContact onClose={onClose} isOpen={isOpen} />
