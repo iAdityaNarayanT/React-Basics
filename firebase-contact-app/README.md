@@ -9,3 +9,6 @@ const contactsSnapshot = await getDocs(contactsRef);
 
 const contactLists = contactsSnapshot.docs.map((doc) => {return { id: doc.id, ...doc.data() };});
 // used to extracts meaningful i.e the array of contacts saved on firebase, maps over every doc to resultant doc.data()
+
+// Rendering a modal dialog with a portal
+https://react.dev/reference/react-dom/createPortal
