@@ -2,6 +2,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { IoMdTrash } from "react-icons/io";
 import { RiEditCircleLine } from "react-icons/ri";
+import { toast } from "react-toastify";
 import { db } from "../config/firebase";
 import useDisclouse from "../hooks/useDisclouse";
 import AddAndUpdateContact from "./AddAndUpdateContact";
@@ -13,6 +14,7 @@ const ContactCard = ({ contact }) => {
   const deleteContact = async (id) => {
     try {
       await deleteDoc(doc(db, "contacts", id));
+      toast.success("Contact Deleted Successfully!");
     } catch (error) {
       console.log(error);
     }
