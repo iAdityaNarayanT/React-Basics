@@ -57,6 +57,7 @@ const App = () => {
           <div className="relative flex items-center flex-grow">
             <FiSearch className="absolute ml-1 text-white text-3xl" />
             <input
+              onChange={filterContacts}
               type="text"
               className="border flex-grow h-10 bg-transparent border-white pl-9 text-white rounded-md"
             />
