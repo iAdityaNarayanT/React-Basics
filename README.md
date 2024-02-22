@@ -26,6 +26,9 @@
 
 <details>
   <summary> What are React Components?</summary>
+
+  ## What are React Components?
+  
 - React applications are totally made out of componenets.
 
 - React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
@@ -43,6 +46,8 @@ Each componenet has its own data, javascript code, and logic.
 
 <details>
   <summary>  What is JSX </summary>
+
+  ## What is JSX
 
 Component contains its own data, logic, and appearance.
 Because if a component is a piece of the user interface, it means that we must be able to describe exactly what that component looks like. And so that's where JSX comes into play.
@@ -157,7 +162,9 @@ const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 
   </details>
 
-
+<details>
+  <summary>  Conditional Rendering using multiple returns </summary>
+  
 ## Conditional Rendering using multiple returns
 
 - Conditional rendering with multiple returns allows components to return different JSX blocks based on a condition.
@@ -169,6 +176,11 @@ const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 💡 Early return with null can be used to prevent rendering certain components based on a condition.
 
 💡 The return operator should be used whenever there is a need to return JSX based on a condition.
+
+  </details>
+
+<details>
+  <summary>  Handling Events in React </summary>
 
 ## Handling Events in React
 
@@ -186,6 +198,11 @@ Handling events in React is done in a declarative way using event listeners atta
 
 💡 State is needed to make meaningful changes in React components, such as updating the value of a step.
 
+  </details>
+  
+<details>
+  <summary> State </summary>
+
 ## State
 
 > Understanding state mechanics unlocks the power of React development.
@@ -200,6 +217,11 @@ Handling events in React is done in a declarative way using event listeners atta
 
 🧩 State is dynamic and enables developers to make their applications interactive by responding to user actions.
 
+  </details>
+
+  <details>
+  <summary> How to create a state variable using the useState hook in React? </summary>
+    
 ## How to create a state variable using the useState hook in React?
 
 ```
@@ -236,6 +258,11 @@ function Example() {
 - Manually updating state variables may not trigger a re-render in React.
 - Treat state as immutable and use the tools provided by React to update it.
 
+   </details>
+
+ <details>
+  <summary> Mechanics of state </summary>
+
 ## Mechanics of state
 
 - React updates a component view by re-rendering the entire component whenever the underlying data changes.
@@ -253,6 +280,11 @@ Updating state based on the current state can lead to unexpected behavior. It is
 
 🆗 When updating state without considering the current state, it is safe to pass the new value directly.
 
+   </details>
+
+ <details>
+  <summary> Guidelines for Using State </summary>
+   
 ## Guidelines for Using State
 
 With state, we view Ul as a reflection of data changing over time. We describe that reflection of data using `state, event handlers, and JSX.`
@@ -269,10 +301,21 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 
 📌 Use regular variables defined with "const" for variables that do not need state.
 
+ </details>
+
+<details>
+  <summary> State vs props </summary>
+  
 ## State vs props
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/1082674d-d29c-4d1f-913f-e89a85fbf943)
 
+ </details>
+
+
+<details>
+  <summary>  Thinking in React </summary>
+  
 ## Thinking in React
 
 > Thinking in React is about having a good understanding of how to use React tools, such as components, state, props, and data flow.
@@ -292,6 +335,11 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/assets/98219031/d121aa36-ae87-420b-aa80-b928f6e2ecb5)
 
+ </details>
+
+<details>
+  <summary> State When and where?</summary>
+  
 ## State When and where?
 
 📌 State management involves creating new pieces of state, determining the type of state needed, deciding where to place the state, and managing data flow.
@@ -308,6 +356,12 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 
 ![image](https://github.com/iAdityaNarayanT/React-Basics/blob/3f2dd5cea5a66b45406888fe97f3c506d419a4a8/assets/React%20state%20mgmt.png)
 
+
+ </details>
+
+<details>
+  <summary> Derived State </summary>
+
 ## Derived State
 
 💡 Derived state is computed from another existing piece of state or props.
@@ -321,3 +375,5 @@ With state, we view Ul as a reflection of data changing over time. We describe t
 💡 It is recommended to use derived state when one state can easily be computed from another, to avoid unnecessary complexity and potential errors.
 
 💡 The cart state in the example serves as a single source of truth for the numItems and totalPrice state variables.
+
+ </details>
