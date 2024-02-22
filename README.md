@@ -25,9 +25,7 @@
 > [Guidelines for Using State](#state-vs-props)
 
 <details>
-  <summary>## What are React Components?</summary>
-What are React Components
-
+  <summary> What are React Components?</summary>
 - React applications are totally made out of componenets.
 
 - React components are like building blocks for user interface in react. It takes all the components and combine them together to build one single webpage UI.
@@ -43,7 +41,8 @@ Each componenet has its own data, javascript code, and logic.
 
 </details>
 
-## What is JSX
+<details>
+  <summary>  What is JSX </summary>
 
 Component contains its own data, logic, and appearance.
 Because if a component is a piece of the user interface, it means that we must be able to describe exactly what that component looks like. And so that's where JSX comes into play.
@@ -58,6 +57,11 @@ a declarative approach is to simply describe what the UI should look like at all
 We use JSX to describe the UI based on props and state. So the data that's currently in the component and all that happens without any DOM manipulation at all.
 
 So, there are no Query selectors, no ad event listeners, no class list, no text content properties anywhere to be seen here because in fact, React is basically a huge abstraction away from the DOM we use JSX to tell React what we want to see on the screen but not how to achieve it step-by-step. React can figure that out on its own.
+
+</details>
+
+<details>
+  <summary>  What is props </summary>
 
 ## What is props
 
@@ -84,6 +88,11 @@ Receiving Props in Child Component: The child component receives props through a
 
 > Destructuring props allows us to directly receive the props object into a component instead of writing props dot whatever else. It makes it easier to see which props a component will receive.
 
+</details>
+
+<details>
+  <summary>  Rendering Lists in React using map() </summary>
+
 ## Rendering Lists in React using map()
 
 Rendering lists in React involves creating a component for each element in an array. This can be achieved using the map method in JavaScript.
@@ -102,6 +111,11 @@ Rendering lists in React involves creating a component for each element in an ar
 
 ✂️ Rendering lists in React is a fundamental technique that will be used frequently throughout the course.
 
+</details>
+
+<details>
+  <summary>  Conditional Rendering using && operator </summary>
+
 ## Conditional Rendering using && operator
 
 The && operator is demonstrated as a way to conditionally render JSX based on a certain condition.
@@ -117,6 +131,11 @@ The && operator is demonstrated as a way to conditionally render JSX based on a 
 👉 It is important to ensure that the condition used with the && operator evaluates to a true or false value, rather than a number, to avoid unexpected rendering results.
 
 👉 While the && operator can be convenient for simple conditional rendering, the ternary operator is often preferred for more complex conditions.
+
+</details>
+
+<details>
+  <summary>  Conditional Rendering using Ternary operator </summary>
 
 ## Conditional Rendering using Ternary operator
 
@@ -135,6 +154,9 @@ const renderComponent = isComponentA ? <ComponentA /> : <ComponentB />;`
 - Using the ternary operator allows for displaying an alternative message or JSX element.
 - If-else statements cannot be used for conditional rendering in JSX because they do not produce a value.
 - The ternary operator is a preferred method for conditional rendering over the && operator.
+
+  </details>
+
 
 ## Conditional Rendering using multiple returns
 
