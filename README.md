@@ -25,8 +25,8 @@
 > [Guidelines for Using State](#state-vs-props)
 
 <details>
-  <summary>What are React Components?</summary>
-## What are React Components
+  <summary>## What are React Components?</summary>
+What are React Components
 
 - React applications are totally made out of componenets.
 
