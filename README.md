@@ -24,6 +24,8 @@
 
 > [Guidelines for Using State](#state-vs-props)
 
+<details>
+  <summary>What are React Components?</summary>
 ## What are React Components
 
 - React applications are totally made out of componenets.
@@ -38,6 +40,8 @@ Each componenet has its own data, javascript code, and logic.
 > Componenets can be reuse, nested inside each other, and pass data between them.
 
 > Components can only return one element at a time, that's why we need to wrap them up under one div tag
+
+</details>
 
 ## What is JSX
 
